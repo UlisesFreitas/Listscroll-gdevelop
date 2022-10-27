@@ -115,15 +115,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/GoUp.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\GoUp.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/GoDown.png",
         "kind": "image",
         "metadata": "",
@@ -151,21 +142,30 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/ScrollBar-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\ScrollBar-1.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/ScrollToggle-1.png",
         "kind": "image",
         "metadata": "",
         "name": "assets\\ScrollToggle-1.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/GoUp.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\GoUp.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ScrollBar-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ScrollBar-1.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -194,7 +194,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.5416667114257806,
+        "zoomFactor": 0.41666672363281176,
         "windowMask": false
       },
       "objectsGroups": [
@@ -226,8 +226,8 @@
           "name": "ListScrollArea",
           "persistentUuid": "3ed5f641-4c73-42c8-991a-d646d2aa3ddf",
           "width": 336,
-          "x": 40,
-          "y": 200,
+          "x": 32,
+          "y": 48,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -241,8 +241,8 @@
           "name": "ListScrollMask",
           "persistentUuid": "ed562438-d6ea-4576-a727-dd0ebc2f4af6",
           "width": 336,
-          "x": 40,
-          "y": 200,
+          "x": 32,
+          "y": 48,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -257,7 +257,7 @@
           "persistentUuid": "e5ac9971-3037-4bda-a776-22fa73df2ee2",
           "width": 720,
           "x": 440,
-          "y": 128,
+          "y": -576,
           "zOrder": 38,
           "numberProperties": [],
           "stringProperties": [],
@@ -435,7 +435,7 @@
               ]
             },
             {
-              "name": "One",
+              "name": "Pition",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -464,7 +464,7 @@
               ]
             },
             {
-              "name": "Two",
+              "name": "Shield",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -493,7 +493,7 @@
               ]
             },
             {
-              "name": "Three",
+              "name": "Sword",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -533,9 +533,9 @@
           "effects": [],
           "behaviors": [
             {
+              "checkCollisionMask": true,
               "name": "Draggable",
-              "type": "DraggableBehavior::Draggable",
-              "checkCollisionMask": true
+              "type": "DraggableBehavior::Draggable"
             }
           ],
           "animations": [
@@ -581,7 +581,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "WindowBox",
+              "name": "Mask",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -729,9 +729,9 @@
           "effects": [],
           "behaviors": [
             {
+              "checkCollisionMask": true,
               "name": "Draggable",
-              "type": "DraggableBehavior::Draggable",
-              "checkCollisionMask": true
+              "type": "DraggableBehavior::Draggable"
             }
           ]
         },
@@ -959,7 +959,6 @@
                               "colorG": 176,
                               "colorR": 74,
                               "creationTime": 0,
-                              "folded": true,
                               "name": "Scroll Button",
                               "source": "",
                               "type": "BuiltinCommonInstructions::Group",
@@ -1239,7 +1238,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "disabled": true,
               "folded": true,
               "name": "Scroll List - Limit ScrollSliderButton to ScrollBar",
               "source": "",
@@ -1327,7 +1325,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "disabled": true,
               "folded": true,
               "name": "Default positions",
               "source": "",
@@ -1367,7 +1364,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "disabled": true,
               "folded": true,
               "name": "Mask",
               "source": "",
@@ -1442,7 +1438,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "disabled": true,
               "folded": true,
               "name": "Scroll List - ScrollUpButton",
               "source": "",
@@ -1531,7 +1526,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "disabled": true,
               "folded": true,
               "name": "Scroll list",
               "source": "",
@@ -1887,7 +1881,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "disabled": true,
               "folded": true,
               "name": "Move with - ScrollArea or ScrollSliderButton",
               "source": "",
@@ -2115,7 +2108,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "disabled": true,
               "folded": true,
               "name": "Scroll List - ScrollSliderButton Beign dragged",
               "source": "",
@@ -2144,7 +2136,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "disabled": true,
               "folded": true,
               "name": "Scroll List - ScrollDownButton",
               "source": "",
@@ -2346,7 +2337,7 @@
     {
       "author": "",
       "category": "User interface",
-      "description": "# List scroll\n## Simple extension to create a scrollable list of items\n### Setup the list\n* Use 1 Sprite for the List, add to this sprite the behavior Draggable.\n* Use 1 Sprite for the Mask.\n* Use 2 Sprites  `Up button`, `Down button`.\n* Use 1 Sprite (9-patch) for the `Slider button`, and add Draggable behavior to this Sprite.\n* Use 1 Sprite (9-patch) for the `Slider background`.\n### Setup the list items as you need.\n* Use 1 Sprite for the `ItemButton` add to this Sprite the behavior `PinTo`.\n* Use 1 Sprite for the `ItemIcon` add to this Sprite the behavior `PinTo`.\n* Use 1 Text for the `ItemTitle` add to this Sprite the behavior `PinTo`.\n* Use 1 Text for the `ItemDescription` add to this Sprite the behavior `PinTo`.\n\n",
+      "description": "# Listscroll-gdevelop\nSimple extension to create a scrollable list of items\n# List scroll\n## Simple extension to create a scrollable list of items\n### Setup the list\n* Use 1 Sprite for the `ListArea`, add to this sprite the `Draggable` behavior .\n* Use 1 Sprite for the `MaskArea`.\n* Use 2 Sprites  `Up button`, `Down button`.\n* Use 1 Panel Sprite (\"9-patch\") for the `Slider button`, and add `Draggable` behavior to this Sprite.\n* Use 1 Panel Sprite (\"9-patch\") for the `Slider background bar`.\n### Setup the list items as you need.\n* Use 1 Sprite for the `ItemButton` add to this Sprite the behavior `PinTo`.\n* Use 1 Sprite for the `ItemIcon` add to this Sprite the behavior `PinTo`.\n* Use 1 Text for the `ItemTitle` add to this Sprite the behavior `PinTo`.\n* Use 1 Text for the `ItemDescription` add to this Sprite the behavior `PinTo`.\n\n### See here how to add `PinTo` behavior to the Sprites.\n![image](https://user-images.githubusercontent.com/2497411/198402557-b36600d3-3a7c-44c3-a116-d23feed38b2d.png)\n\n### In GDevelop - Scene editor\nScene setup add add 2 Sprites the `listArea` and the `MaskArea`\nDepending on the `ListArea` position the `UpButton`, `DownButton`, `SliderButton` and `SliderBackground` will be created.\n\n1. You end with something like this, the `white sprite` is the `MaskArea`.\n2. The `lightblue` is the `ListArea`\n\n![image](https://user-images.githubusercontent.com/2497411/198400256-3014a8ff-e5af-4bee-b811-8ec3746719da.png)\n\n### In GDevelop - Events editor\n1. Add an empty event select the `ListArea` Sprite and look for `List Scroll` then select `Init List Scroll`\n\n![image](https://user-images.githubusercontent.com/2497411/198399794-c13beb9a-061a-48fe-851f-f676c75c6098.png)\n\n2. Then add another action just below the previous and set the `Masked items` go to `Othe actions` and set `List Scroll -> Masked Items`\n\n![image](https://user-images.githubusercontent.com/2497411/198401274-8e5a2693-7d8d-4d70-bd16-bbea1dae8932.png)\n\n3. You end with comething like this:\n![image](https://user-images.githubusercontent.com/2497411/198400689-52cf997b-d708-4c35-bd89-2b806a0d7980.png)\n\n## See full documentation here:\n- Source & Documentation\nhttps://github.com/UlisesFreitas/Listscroll-gdevelop\n- Video Tutorial\nhttps://www.youtube.com/watch?v=7p3FD8WvYX4\n",
       "extensionNamespace": "",
       "fullName": "ListScroll",
       "helpPath": "https://github.com/UlisesFreitas/Listscroll-gdevelop",
@@ -3840,7 +3831,7 @@
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::JsCode",
-                  "inlineCode": "const bhName = eventsFunctionContext.getBehaviorName(\"Behavior\");\nconst obj = objects[0];\nconst behavior = obj.getBehavior(bhName);\nif (runtimeScene.__allPinnedTo){\n    runtimeScene.__allPinnedTo.delete(behavior);    \n}\n",
+                  "inlineCode": "const bhName = eventsFunctionContext.getBehaviorName(\"Behavior\");\nconst obj = objects[0];\nconst behavior = obj.getBehavior(bhName);\nif (runtimeScene.__allPinnedTo){\n    runtimeScene.__allPinnedTo.delete(behavior);    \n}",
                   "parameterObjects": "Object",
                   "useStrict": true,
                   "eventsSheetExpanded": true
