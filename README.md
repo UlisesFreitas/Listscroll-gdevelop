@@ -38,3 +38,10 @@ Depending on the `ListArea` position the `UpButton`, `DownButton`, `SliderButton
 3. You end with comething like this:
 ![image](https://user-images.githubusercontent.com/2497411/198400689-52cf997b-d708-4c35-bd89-2b806a0d7980.png)
 
+## See full documentation here:
+- Source & Documentation
+https://github.com/UlisesFreitas/Listscroll-gdevelop
+- Video Tutorial
+https://www.youtube.com/watch?v=7p3FD8WvYX4
+
+
