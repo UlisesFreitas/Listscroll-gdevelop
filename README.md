@@ -3,16 +3,19 @@ Simple extension to create a scrollable list of items
 # List scroll
 ## Simple extension to create a scrollable list of items
 ### Setup the list
-* Use 1 Sprite for the ListArea, add to this sprite the behavior Draggable.
-* Use 1 Sprite for the MaskArea.
+* Use 1 Sprite for the `ListArea`, add to this sprite the `Draggable` behavior .
+* Use 1 Sprite for the `MaskArea`.
 * Use 2 Sprites  `Up button`, `Down button`.
-* Use 1 Panel Sprite ("9-patch") for the `Slider button`, and add Draggable behavior to this Sprite.
-* Use 1 Panel Sprite ("9-patch") for the `Slider background`.
+* Use 1 Panel Sprite ("9-patch") for the `Slider button`, and add `Draggable` behavior to this Sprite.
+* Use 1 Panel Sprite ("9-patch") for the `Slider background bar`.
 ### Setup the list items as you need.
 * Use 1 Sprite for the `ItemButton` add to this Sprite the behavior `PinTo`.
 * Use 1 Sprite for the `ItemIcon` add to this Sprite the behavior `PinTo`.
 * Use 1 Text for the `ItemTitle` add to this Sprite the behavior `PinTo`.
 * Use 1 Text for the `ItemDescription` add to this Sprite the behavior `PinTo`.
+
+### See here how to add `PinTo` behavior to the Sprites.
+![image](https://user-images.githubusercontent.com/2497411/198402557-b36600d3-3a7c-44c3-a116-d23feed38b2d.png)
 
 ### In GDevelop - Scene editor
 Scene setup add add 2 Sprites the `listArea` and the `MaskArea`
