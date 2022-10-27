@@ -6,8 +6,8 @@ Simple extension to create a scrollable list of items
 * Use 1 Sprite for the ListArea, add to this sprite the behavior Draggable.
 * Use 1 Sprite for the MaskArea.
 * Use 2 Sprites  `Up button`, `Down button`.
-* Use 1 Sprite (9-patch) for the `Slider button`, and add Draggable behavior to this Sprite.
-* Use 1 Sprite (9-patch) for the `Slider background`.
+* Use 1 Panel Sprite ("9-patch") for the `Slider button`, and add Draggable behavior to this Sprite.
+* Use 1 Panel Sprite ("9-patch") for the `Slider background`.
 ### Setup the list items as you need.
 * Use 1 Sprite for the `ItemButton` add to this Sprite the behavior `PinTo`.
 * Use 1 Sprite for the `ItemIcon` add to this Sprite the behavior `PinTo`.
